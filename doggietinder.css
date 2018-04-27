@@ -1,0 +1,174 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("background.jpg");
+    background-size: 100%;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.topbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: green;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.nav{
+    list-style-type: none;
+    text-align: end;
+}
+
+li{
+    border-right: white solid 3px;
+    margin: 5px;
+    padding-right: 3px;
+}
+
+.middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.topsearch{
+    display: none;
+}
+
+footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    background-color: green;
+
+}
+
+.profileimg{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.profile{
+    border: white solid 3px;
+    min-width: 100px;
+    padding: 0 10px;
+    margin: 0 10px 10px 10px;
+}
+
+.profileblock{
+    display: flex;
+    align-items: flex-start;
+}
+
+.pref{
+    text-align: center;
+    margin: 10px;
+}
+
+.prefsection{
+    border: white solid 3px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+    padding-bottom: 50px;
+}
+
+.input{
+    color: white;
+    background-color: green;
+    width: 80%;
+    text-align: center;
+    
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+.button{
+    color: white;
+    background-color: green;
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 5px;
+    text-decoration: none;
+    
+}
+
+.searchbar{
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 768px){
+
+    body{
+        font-size: 1.2em;
+    }
+   .topbar{
+       display: flex inline-block;
+       padding: 15px;   
+   }
+
+   .input{
+       line-height: 2em;
+       font-size: .8em;
+   }
+
+   .button{
+        line-height: 1em;
+        font-size: .8em;
+   }
+
+   li{
+       display: inline-block;
+       border-right: none;
+       border-bottom: 3px solid white;
+   }
+   
+   h2{
+       margin: 0;
+   }
+   footer{
+       display: none;
+   }
+    .searchtop{
+        width: 200px;
+        background-color: green;
+    }
+
+    .searchbar{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pref{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .middle{
+        justify-content: center;
+    }
+}
